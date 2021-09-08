@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fav icon-->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="facicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="facicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="facicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="facicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="facicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="facicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="facicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="facicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="facicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="facicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="facicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="facicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="facicon/favicon-16x16.png">
+    <link rel="manifest" href="facicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Avatar</title>
+</head>
+
+<body>
+
+    <section>
+        <h1>well come</h1>
+        <div class="centerdiv">
+            <div class="details">
+                <label> enter your name</label>
+                <input type="text" id="nameid">
+            </div>
+
+            <div class="imagediv">
+                <img src="image.jpg" height="175vh" alt="" class="imgchange">
+            </div>
+            <button>click me</button>
+        </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('button').click(function () {
+                const name = $('#nameid').val();
+                alert(name);
+
+                $('.imgchange').attr('src', `https://joeschmoe.io/api/v1/${name}`);
+            });
+        });
+    </script>
+</body>
+
+</html>
