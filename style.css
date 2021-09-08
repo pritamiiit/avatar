@@ -41,7 +41,7 @@ section h1{
 }
 
 .imagediv{
-    margin: 1vw;
+   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,6 +52,6 @@ section h1{
 
 
 button{
-    margin: 2vh;
+    margin: 1vh;
     width: 15vw;
 }
