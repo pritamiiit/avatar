@@ -15,6 +15,7 @@ section{
 section h1{
     color: brown;
     font-size: 15vh;
+    text-shadow: 7px 3px 10px rgb(231, 226, 226);
 }
 .centerdiv{
     background-color: rgb(46, 74, 126);
@@ -26,6 +27,9 @@ section h1{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    overflow: auto;
+
+    box-shadow: 6px 6px 15px rgb(44, 83, 88);
 }
 
 .details{
@@ -55,4 +59,6 @@ section h1{
 button{
     margin: 1vh;
     width: 15vw;
+      color: rgb(20, 48, 37);
+    background-color: rgb(107, 199, 211);
 }
