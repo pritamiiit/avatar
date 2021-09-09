@@ -5,7 +5,7 @@
 }
 
 section{
-    background: rgb(107, 211, 107);
+    background: rgb(107, 199, 211);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@ section h1{
     text-shadow: 7px 3px 10px rgb(231, 226, 226);
 }
 .centerdiv{
-    background-color: rgb(46, 74, 126);
+    background-color: rgb(54, 133, 103);
     height: 60vh;
     width: 55vw;
     border: 2px solid white;
